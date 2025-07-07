@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="734dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="30"
+            android:background="@android:color/darker_gray"
+            android:gravity="bottom|end"
+            android:maxLength="20"
+            android:padding="8dp"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="24dp"
+            android:layout_weight="80"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonNumber7"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="clickOnNumber"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="7"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    <Button
+                        android:id="@+id/buttonNumber8"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="clickOnNumber"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="8"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    <Button
+                        android:id="@+id/buttonNumber9"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="clickOnNumber"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="9"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    <Button
+                        android:id="@+id/buttonNumberDevid"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="onOperatorClicked"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="/"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonNumber4"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="clickOnNumber"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="4"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    <Button
+                        android:id="@+id/buttonNumber5"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="clickOnNumber"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="5"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    <Button
+                        android:id="@+id/buttonNumber6"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="clickOnNumber"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="6"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    <Button
+                        android:id="@+id/buttonMultiple"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="onOperatorClicked"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="*"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonNumber1"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="clickOnNumber"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="1"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    <Button
+                        android:id="@+id/buttonNumber2"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="clickOnNumber"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="2"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    <Button
+                        android:id="@+id/buttonNumber3"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="clickOnNumber"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="3"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    <Button
+                        android:id="@+id/buttonMines"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="4dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="30"
+                        android:backgroundTint="@color/black"
+                        android:onClick="onOperatorClicked"
+                        android:padding="8dp"
+                        android:paddingHorizontal="2dp"
+                        android:paddingVertical="2dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="-"
+                        android:textSize="20sp"
+                        app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="273dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonClear"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="4dp"
+                            android:layout_marginHorizontal="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_weight="30"
+                            android:backgroundTint="@color/black"
+                            android:onClick="clickOnClear"
+                            android:padding="8dp"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="2dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="Clear"
+                            android:textSize="20sp"
+                            app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                        <Button
+                            android:id="@+id/buttonNumber0"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="4dp"
+                            android:layout_marginHorizontal="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_weight="30"
+                            android:backgroundTint="@color/black"
+                            android:onClick="clickOnNumber"
+                            android:padding="8dp"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="2dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="0"
+                            android:textSize="20sp"
+                            app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                        <Button
+                            android:id="@+id/buttonNumberDot"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="4dp"
+                            android:layout_marginHorizontal="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_weight="30"
+                            android:backgroundTint="@color/black"
+                            android:onClick="clickOnDot"
+                            android:padding="8dp"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="2dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="."
+                            android:textSize="20sp"
+                            app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonNumberEqual"
+                            android:layout_width="363dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="4dp"
+                            android:layout_marginHorizontal="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_weight="30"
+                            android:backgroundTint="@color/black"
+                            android:onClick="clickOnEqual"
+                            android:padding="8dp"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="2dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="="
+                            android:textSize="20sp"
+                            app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonNumberPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="164dp"
+                    android:layout_margin="4dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="30"
+                    android:backgroundTint="@color/black"
+                    android:onClick="onOperatorClicked"
+                    android:padding="8dp"
+                    android:paddingHorizontal="2dp"
+                    android:paddingVertical="2dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="+"
+                    android:textSize="20sp"
+                    app:shapeAppearance="@style/Widget.Support.CoordinatorLayout" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
